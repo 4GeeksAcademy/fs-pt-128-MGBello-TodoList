@@ -31,7 +31,7 @@ export const ListSection = ({ todoList, setTodoList, list, setList }) => {
         setTodoList(filterList);
     }
     return (
-        <div className="main d-flex flex-column align-items-center justify-content-center">
+        <main className="main d-flex flex-column align-items-center justify-content-center">
             <div className="input-group input-task m-3 w-100 justify-content-center">
                 <span className="input-group-text input-task-text" id="inputGroup-sizing-default">Task</span>
                 <input type="text" name='list'
@@ -70,6 +70,6 @@ export const ListSection = ({ todoList, setTodoList, list, setList }) => {
                     </div>
                 ))
             }
-        </div >
+        </main >
     );
 };
