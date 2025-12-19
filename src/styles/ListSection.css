@@ -1,0 +1,82 @@
+.main {
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+}
+
+.input-task {
+    max-width: 90%;
+    font-size: 15px;
+}
+
+.input-task-input,
+.input-task-input:hover,
+.button-task {
+    border-color: rgba(249, 156, 138, 1);
+    color: rgba(249, 156, 138, 1);
+    font-size: 18px;
+}
+
+.button-task:hover,
+.input-task-text {
+    background-color: rgba(249, 156, 138, 1);
+    border-color: rgba(249, 156, 138, 1);
+    color: #fff;
+}
+
+.totalTasks {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.tasks {
+    max-width: 90%;
+    border-left: 8px solid green;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    padding: 10px;
+}
+
+.tasks p {
+    word-break: break-word;
+    word-wrap: break-word;
+    white-space: normal;
+    flex-grow: 1;
+    max-width: 70%;
+}
+
+.tasks input {
+    word-break: break-word;
+    word-wrap: break-word;
+    white-space: normal;
+    flex-grow: 1;
+    max-width: 85%;
+}
+
+.tasks .edit,
+.tasks .delete {
+    opacity: 1;
+    visibility: visible;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+
+@media (min-width: 769px) {
+
+    .tasks .edit,
+    .tasks .delete {
+        opacity: 0;
+        visibility: hidden;
+        margin-right: 10px;
+        padding: 5px;
+
+    }
+
+    .tasks:hover .edit,
+    .tasks:hover .delete {
+        opacity: 1;
+        visibility: visible;
+    }
+}
